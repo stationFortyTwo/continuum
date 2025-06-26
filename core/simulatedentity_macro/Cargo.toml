@@ -1,0 +1,17 @@
+[package]
+name = "simulatedentity_macro"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2", features = ["derive", "full"] }
+quote = "1"
+proc-macro2 = "1"
+memoffset = "0.9"
+proc-macro-crate = "3"
+
+[lints]
+workspace = true
